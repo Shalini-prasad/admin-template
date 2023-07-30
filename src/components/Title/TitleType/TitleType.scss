@@ -1,0 +1,39 @@
+@import "../../../utils/global.scss";
+
+.title-type-wrapper {
+  display: flex;
+  .title-type {
+    display: flex;
+    border: 1px solid $color-grey;
+    border-radius: 12px;
+    li {
+      color: $color-neutral-light-300;
+      &:last-child {
+        a {
+          border-right: none;
+        }
+      }
+    }
+    .active{
+      background:$color-grey ;
+      pointer-events:none;
+      color:black;     
+        svg{
+          color:black;
+        }      
+    }
+    a {
+      padding: 9px 16px 8px 16px;      
+      @include font($poppins, 10px, 600, 15px);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      border-right: 1px solid $color-grey;
+
+      svg {
+        color: $color-neutral-light-200;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../../utils/global.scss";
+.sign-in {
+  display: flex;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 0;
+    form {
+      max-width: 400px;
+      width: 100%;
+      margin: 215px 160px 214px 160px;
+      @media (max-width: 768px) {
+        margin: 160px;
+        padding: 25px;
+      }
+      @media (max-width: 575px) {
+        margin: 106px 60px;
+        padding: 25px;
+      }
+      .form-title {
+        text-align: center;
+        h3 {
+          @include font($poppins, 28px, 500, 42px);
+          margin-bottom: 40px;
+        }
+        p {
+          @include font($poppins, 12px, 400, 18px);
+          margin-bottom: 40px;
+          color: $color-darkgrey;
+        }
+      }
+
+      .forget-password {
+        color: $color-primary;
+        @include font($poppins, 12px, 600, 18px);
+        margin-bottom: 24px;
+      }
+      .form-footer {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .section-footer {
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 24px;
+    @include font($poppins, 14px, 400, 21px);
+
+    span {
+      color: $color-primary;
+      @include font($poppins, 14px, 600, 21px);
+      margin-left: 4px;
+    }
+  }
+}

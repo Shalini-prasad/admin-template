@@ -1,0 +1,10 @@
+@import "../../../utils/global.scss";
+.management {
+  padding-top: 64px;
+  margin-left: 270px;
+  .board-body {
+    display: flex;
+    padding: 0 30px 24px 30px;
+    gap: 8px;
+  }
+}

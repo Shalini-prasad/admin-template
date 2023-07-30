@@ -1,0 +1,70 @@
+@import "../../../../utils/global.scss";
+.profile-body-details {
+  padding: 24px 30px 0 30px;
+
+  /* max-width: 337px; */
+  flex: 0.33;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .profile-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    .user-info {
+      text-align: center;
+      .profile-avatar {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+        img {
+          width: 100%;
+        }
+      }
+      h2 {
+        margin-bottom: 4px;
+        color: $color-neutral-light;
+        @include font($poppins, 20px, 500, 30px);
+      }
+      p {
+        @include font($poppins, 12px, 400, 18px);
+        color: $color-darkgrey;
+      }
+    }
+    .user-followers {
+      display: flex;
+      gap: 8px;
+      li {
+        padding-left: 10px;
+        padding-right: 10px;
+        p {
+          @include font($poppins, 12px, 600, 18px);
+          margin-bottom: 4px;
+          color: $color-neutral-light-300;
+        }
+        span {
+          @include font($poppins, 16px, 600, 24px);
+          color: $color-darkgrey;
+        }
+      }
+    }
+    .user-contact {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        p {
+          margin-left: 12px;
+          color: $color-darkgrey;
+          @include font($poppins, 14px, 400, 21px);
+        }
+      }
+    }
+    .contact-button {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}

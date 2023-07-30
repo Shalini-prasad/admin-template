@@ -1,0 +1,21 @@
+@import "../../../utils/global.scss";
+.hii {
+  .layout {
+    margin-left: 66px;
+  }
+  .header {
+    width: calc(100% - 66px);
+  }
+}
+.layout {
+  padding-top: 64px;
+  margin-left: 270px;
+  .profile-body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.socials {
+  background: $color-content-bg;
+}
+/* padding:24px 30px 0 30px; */

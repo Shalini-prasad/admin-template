@@ -1,0 +1,40 @@
+@import "../../utils/global.scss";
+.header {
+  max-height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 16px 30px;
+  width: calc(100% - 270px);
+  top: 0;
+  z-index: 3;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+  background-color: $color-white;
+  .header-left {
+    display: flex;
+    h2 {
+      @include font($poppins, 18px, 500, 27px);
+    }
+  }
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    .searchbar {
+      cursor: pointer;
+      // border: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      border-radius: 999px;
+      padding-left: 10px;
+      padding-right: 10px;
+      > input {
+        background-color: transparent;
+        outline-width: 0;
+        border: none;
+      }
+    }
+  }
+}

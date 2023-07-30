@@ -1,0 +1,12 @@
+@import "../../../../utils/global.scss";
+.profile-body-others {
+  /* max-width: 336px; */
+  flex: 0.33;
+  padding: 24px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .media-grid{
+    gap:8px;
+  }
+}

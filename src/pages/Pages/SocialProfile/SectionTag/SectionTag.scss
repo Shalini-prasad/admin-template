@@ -1,0 +1,13 @@
+@import "../../../../utils/global.scss";
+.section-tag {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  p {
+    @include font($poppins, 14px, 600, 21px);
+  }
+  a {
+    @include font($poppins, 12px, 600, 18px);
+    color: $color-primary;
+  }
+}

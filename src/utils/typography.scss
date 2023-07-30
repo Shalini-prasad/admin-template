@@ -1,0 +1,11 @@
+// poppins 500 600
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+$poppins: "Poppins";
+
+@mixin font($ff, $fs, $fw, $lh) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

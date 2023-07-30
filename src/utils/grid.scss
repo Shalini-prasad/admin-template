@@ -1,0 +1,60 @@
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+@mixin make-grid-columns($columns) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: percentage(($i / $columns));
+    }
+  }
+}
+
+@mixin make-grid-breakpoints($breakpoints) {
+  @each $breakpoint, $value in $breakpoints {
+    @media (min-width: $value) {
+      .col-#{$breakpoint} {
+        width: percentage(($breakpoint / $grid-columns));
+      }
+    }
+  }
+}
+
+// Container
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Row
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+// Columns
+.col {
+  flex: 1 0 0%;
+}
+
+@include make-grid-columns($grid-columns);
+
+// @include make-grid-breakpoints(
+//   (
+//     sm: 576px,
+//     md: 768px,
+//     lg: 992px,
+//     xl: 1200px,
+//   )
+// );

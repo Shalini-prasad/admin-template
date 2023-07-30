@@ -1,0 +1,103 @@
+@import "../../utils/global.scss";
+
+.form-btn {
+  @include font($poppins, 16px, 600, 24px);
+  &:hover {
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $color-primary;
+    }
+  }
+}
+
+.button-signin {
+  @include button(
+    119px,
+    16px 32px,
+    56px,
+    transparent,
+    $color-primary,
+    $color-white
+  );
+}
+
+.button-signup {
+  @include button(126px, 16px, 56px, transparent, $color-primary, $color-white);
+}
+
+.button-google {
+  @include button(
+    100%,
+    14px 44px 13px 16px,
+    48px,
+    $color-grey,
+    $color-white,
+    $color-darkgrey
+  );
+  @include font($poppins, 14px, 600, 21px);
+  &:hover {
+    color: rgba($color-darkgrey, 0.8);
+  }
+}
+.cta {
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button-back-to-login {
+  @include button(172px, 16px 32px, 56px, transparent, #f5f5f5, #727880);
+  @include font($poppins, 16px, 600, 24px);
+}
+.button-send {
+  @include button(
+    106px,
+    16px 32px,
+    56px,
+    transparent,
+    $color-primary,
+    $color-white
+  );
+  @include font($poppins, 16px, 600, 24px);
+}
+.button-send-msg {
+  @include button(
+    220px,
+    12px 24px,
+    48px,
+    transparent,
+    $color-primary,
+    $color-white
+  );
+  @include font($poppins, 16px, 600, 24px);
+}
+.button-more {
+  @include button(48px, 16px, 48px, $color-grey, transparent, $color-primary);
+}
+.button-title {
+  @include button(40px, 12px, 40px, $color-grey, $color-white, $color-darkgrey);
+}
+.button-invite-member {
+  @include button(
+    159px,
+    10px 16px 9px 16px,
+    40px,
+    $color-primary,
+    $color-primary,
+    $color-white
+  );
+}
+.button-viewMore{
+  @include button(111px, 7px 24px, 32px, $color-grey, $color-white, $color-darkgrey);
+  @include font($poppins, 12px, 600, 18px);
+  &:hover{
+    color:$color-white;
+    background: $color-darkgrey;
+  }
+}

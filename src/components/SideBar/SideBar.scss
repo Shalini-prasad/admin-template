@@ -1,0 +1,152 @@
+@import "../../utils/global.scss";
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $color-primary;
+  padding: 0 8px;
+  min-width: 270px;
+  height: 100vh;
+  z-index: 4;
+  overflow: auto;
+
+  .logo-wrapper {
+    padding: 16px 12px 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-image {
+      width: 121px;
+      height: 32px;
+      img {
+        width: 100%;
+      }
+    }
+    .collapse {
+      padding: 4px;
+      cursor: pointer;
+    }
+  }
+  .sidebarlist {
+    @include font($poppins, 14px, 500, 21px);
+    /* transition: all ease-in .3s; */
+    .openMenu {
+      li {
+        padding: 14px 16px 13px 60px;
+        color: #adb0ed;
+        cursor: pointer;
+        &:hover {
+          color: $color-white;
+          border-radius: 12px;
+          background: $color-active-600;
+          box-shadow: 0px 2px 0px 0px #3b41bb;
+        }
+      }
+    }
+
+    .sidebar-item {
+      color: #adb0ed;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 18px 16px 17px 16px;
+      cursor: pointer;
+      transition: all ease-in 0.1s;
+
+      &.expand {
+        color: $color-white;
+      }
+
+      .addIcon {
+        visibility: hidden;
+      }
+      .icon {
+        margin-right: 16px;
+      }
+      .notification {
+        @include font($poppins, 10px, 600, 15px);
+        background: $color-red-500;
+        color: $color-white;
+        padding: 1px 4px 0 4px;
+        border-radius: 9px;
+      }
+      p {
+        flex: 1;
+        margin-right: 8px;
+      }
+      &:hover {
+        color: $color-white;
+        border-radius: 12px;
+        background: $color-active-600;
+        opacity: 0.8;
+        box-shadow: 0px 2px 0px 0px #3b41bb;
+        .icon {
+          fill: currentColor;
+        }
+      }
+    }
+    .closeMenu {
+      opacity: 0;
+      height: 0px;
+      overflow: hidden;
+    }
+  }
+}
+.width80 {
+  min-width: 66px;
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: unset;
+
+  .logo-wrapper {
+    padding: 7px 7px 16px 7px;
+    position: relative;
+
+    .rightArrow {
+      position: absolute;
+      padding: 4px;
+      height: 24px;
+      width: 24px;
+      border-radius: 16px;
+      background: $color-primary;
+      border: 1px solid #4a50d6;
+      right: -20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  .sidebarlist {
+    .sidebar-item {
+      position: relative;
+      padding: 14px;
+      flex-direction: column;
+      p {
+        display: none;
+      }
+      .addIcon {
+        display: none;
+      }
+      .notification {
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        width: 8px;
+        height: 8px;
+        background: $color-red-500;
+        stroke-width: 2px;
+        stroke: $color-primary;
+        span {
+          display: none;
+        }
+      }
+
+      .icon {
+        margin-right: 0;
+      }
+    }
+  }
+}

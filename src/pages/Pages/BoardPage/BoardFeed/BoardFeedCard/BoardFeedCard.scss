@@ -1,0 +1,39 @@
+@import "../../../../../utils/global.scss";
+.board-card {
+  background: $color-white;
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.07);
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    h4 {
+      @include font($poppins, 14px, 500, 21px);
+    }
+  }
+  &-tag {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 4px;
+  }
+  &-img {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &-text {
+    @include font($poppins, 12px, 400, 18px);
+    color: $color-neutral-light-300;
+    margin-bottom: 16px;
+  }
+  &-reactions {
+    display: flex;
+    justify-content: space-between;
+    .user-action {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

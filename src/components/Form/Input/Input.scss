@@ -1,0 +1,33 @@
+@import "../../../utils/global.scss";
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+.input-wrapper {
+  flex: 1;
+  label {
+    display: block;
+    margin-bottom: 4px;
+    color: #727880;
+    @include font($poppins, 12px, 600, 18px);
+    &::after {
+      content: "*";
+      color: red;
+      margin-left: 2px;
+    }
+  }
+  input {
+    width: 100%;
+    padding: 14px 12px 13px 12px;
+    min-height: 48px;
+    border-radius: 12px;
+    border: 1px solid var(--neutral-light-100, #eee);
+    background: var(--others-white, #fff);
+    @include font($poppins, 14px, 500, 21px);
+  }
+  .password-input {
+    background: url("../../../assets/svgs/hidepassword.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+}

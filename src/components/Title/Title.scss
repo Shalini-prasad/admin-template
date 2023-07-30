@@ -1,0 +1,25 @@
+@import "../../utils/global.scss";
+.title {
+  padding: 24px 30px;
+  .name-board {
+    display: flex;
+    h2 {
+      flex: 1;
+    }
+    .actions {
+      display: flex;
+      justify-content: end;
+      flex: 1;
+      a {
+        svg {
+          margin-right: 8px;
+        }
+      }
+      .title-btn {
+        display: flex;
+        gap: 8px;
+        margin-right: 24px;
+      }
+    }
+  }
+}

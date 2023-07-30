@@ -1,0 +1,22 @@
+@import "../../utils/global.scss";
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  @include font($poppins, 14px, 400, 21px);
+  color: $color-neutral-light;
+  .active {
+    color: $color-neutral-light-300;
+  }
+  li {
+    span {
+      margin-right: 8px;
+      color: $color-neutral-light-300;
+    }
+    &:first-child {
+      span {
+        display: none;
+      }
+    }
+  }
+}

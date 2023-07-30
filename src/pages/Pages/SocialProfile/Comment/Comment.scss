@@ -1,0 +1,44 @@
+@import "../../../../utils/global.scss";
+
+.post-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .static-section {
+    margin-bottom: 0;
+    .avatar {
+      width: 32px;
+    }
+  }
+  .post-profile {
+    display: flex;
+    align-items: start;
+    .avatar {
+      width: 32px;
+    }
+
+    .media-body {
+      .user-detail {
+        display: flex;
+        h5 {
+          margin-right: 8px;
+          margin-bottom: 5px;
+          @include font($poppins, 12px, 600, 18px);
+        }
+        p {
+          @include font($poppins, 10px, 400, 15px);
+          color: $color-neutral-light-300;
+        }
+      }
+      .comment-text {
+        @include font($poppins, 14px, 400, 21px);
+        color: $color-neutral-light;
+        margin-bottom: 8px;
+      }
+      .reaction-btns {
+        display: flex;
+        gap: 16px;
+      }
+    }
+  }
+}

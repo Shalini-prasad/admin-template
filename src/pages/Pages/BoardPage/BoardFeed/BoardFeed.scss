@@ -1,0 +1,28 @@
+@import "../../../../utils/global.scss";
+.board-feed {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px 12px 12px;
+  background: $color-content-bg;
+  border-radius: 12px;
+  gap: 12px;
+  flex: 1 0 0;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    .heading-title {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-transform: uppercase;
+      @include font($poppins, 12px, 600, 18px);
+      color: $color-neutral-light-300;
+      span {
+        background-color: $color-white;
+        border-radius: 9px;
+        padding: 1px 4px 0px 4px;
+      }
+    }
+  }
+}

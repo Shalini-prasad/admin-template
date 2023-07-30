@@ -1,0 +1,19 @@
+@import "../../utils/global.scss";
+.avatar {
+  width: 32px;
+  position: relative;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+}
+.avatar-online {
+  height: 12px;
+  width: 12px;
+  background-color: $color-active;
+  border: 2px solid $color-white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

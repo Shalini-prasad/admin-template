@@ -1,0 +1,30 @@
+@import "../../utils/global.scss";
+
+.file-list {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  margin-bottom: 4px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  border: 1px dashed $color-grey;
+  .file-icon {
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+  .file-details {
+    display: flex;
+    flex-direction: column;
+    p {
+      @include font($poppins, 12px, 400, 18px);
+      color: $color-neutral-light;
+    }
+    span {
+      @include font($poppins, 10px, 400, 15px);
+      color: $color-darkgrey;
+    }
+  }
+}

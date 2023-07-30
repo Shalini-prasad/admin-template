@@ -1,0 +1,74 @@
+@import "../../../../utils/global.scss";
+
+.post-content {
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    .image {
+      flex: 1 0 50%;
+    }
+  }
+  .text {
+    p {
+      @include font($poppins, 16px, 400, 24px);
+      margin-bottom: 8px;
+    }
+    .hashtag {
+      display: inline-block;
+      @include font($poppins, 14px, 500, 21px);
+      color: $color-primary;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.post-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+  .media {
+    margin-right: 12px;
+  }
+  .media-body {
+    h5 {
+      @include font($poppins, 14px, 600, 21px);
+    }
+    .user-details {
+      display: flex;
+      gap: 8px;
+      p {
+        display: flex;
+        align-items: center;
+        color: $color-neutral-light-300;
+        @include font($poppins, 12px, 400, 18px);
+        .location {
+          margin-right: 4px;
+        }
+        .dateOfPost {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .more-items {
+    margin-left: auto;
+  }
+}
+.post-buttons {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 8px;
+  .post-btn {
+    height: 32px;
+    padding: 7px 8px;
+    border-radius: 12px;
+    border: 1px solid $color-grey;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 8px;
+      color: $color-darkgrey;
+    }
+  }
+}

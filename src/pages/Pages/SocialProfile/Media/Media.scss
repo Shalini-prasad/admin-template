@@ -1,0 +1,34 @@
+@import "../../../../utils/global.scss";
+.media {
+  .media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    .media-box {
+      position: relative;
+      @include social-profile-image-grid(90px, 84px);
+      img {
+        width: 100%;
+      }
+      .video-tag {
+        width: auto;
+        height: 20px;
+        border-radius: 16px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        padding: 2px 4px 2px 2px;
+        align-items: center;
+        gap: 2px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(2px);
+        top: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-white;
+        @include font($poppins, 10px, 400, 15px);
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../utils/global.scss";
+.tag {
+  @include tag(28px, $color-white, $color-darkgrey, 4px 12px 3px 12px);
+  p {
+    @include font($poppins, 14px, 500, 21px);
+  }
+}
+
+.supeHubWebDesign-tag {
+  @include tag(22px, #eaf6fc, #59b4d1, 2px 8px);
+  margin-bottom: 0;
+  p {
+    @include font($poppins, 12px, 500, 18px);
+  }
+}
+
+.daysLeft-tag {
+  @include tag(22px, #eee, #727880, 2px 8px);
+  margin-bottom: 0;
+  p {
+    @include font($poppins, 12px, 500, 18px);
+  }
+}
+.green {
+  svg {
+    color: #7dc066;
+  }
+}
+.orange {
+  svg {
+    color: #f3935d;
+  }
+}
+.red {
+  svg {
+    color: #e5646c;
+  }
+}

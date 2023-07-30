@@ -1,0 +1,59 @@
+@import "../../../../utils/global.scss";
+.feed {
+  flex: 1 0 0;
+  padding-top: 16px;
+  .create-post {
+    padding: 24px;
+    background-color: $color-white;
+    border-radius: 12px;
+    margin-bottom: 8px;
+
+    .create-post-options {
+      display: flex;
+      gap: 16px;
+      li {
+        h4 {
+          display: flex;
+          align-items: center;
+          color: $color-darkgrey;
+          gap: 8px;
+          @include font($poppins, 14px, 600, 21px);
+        }
+      }
+    }
+  }
+  .post-wrapper {
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    background-color: $color-white;
+    .avatar {
+      width: 48px;
+    }
+  }
+}
+
+.static-section {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  .form-wrapper {
+    margin-bottom: 0;
+  }
+  .avatar {
+    width: 40px;
+  }
+  input {
+    color: $color-neutral-light-200;
+    background: $color-content-bg;
+    min-height: 40px;
+    padding: 10px 12px 9px 12px;
+    border: 1px transparent;
+    border-radius: 24px;
+    @include font($poppins, 14px, 400, 21px);
+  }
+  label {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../utils/global.scss";
+.checkbox {
+  display: flex;
+  align-items: center;
+  input[type="checkbox"] {
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1.5px solid $color-grey;
+    background: $color-grey;
+
+    &:checked {
+      border: 1.5px solid $color-primary;
+      background: url("../../assets//svgs/ticks.svg") $color-primary;
+      background-size: contain;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  label {
+    color: black;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding-left: 8px;
+    @include font($poppins, 14px, 500, 21px);
+    span {
+      color: $color-primary;
+    }
+  }
+}

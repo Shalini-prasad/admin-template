@@ -1,0 +1,30 @@
+@import "../../../utils/global.scss";
+@mixin seperator-styles {
+  content: "";
+  position: absolute;
+  width: 151px;
+  border-top: 1px dashed $color-grey;
+  top: 7.5px;
+}
+
+.seperator {
+  position: relative;
+  text-align: center;
+
+  &::before {
+    @include seperator-styles();
+    left: 0;
+  }
+  &::after {
+    @include seperator-styles();
+    right: 0;
+  }
+  span {
+    display: block;
+    @include font($poppins, 10px, 600, 15px);
+    text-transform: uppercase;
+    color: #c6c8cb;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

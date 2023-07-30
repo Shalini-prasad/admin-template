@@ -1,0 +1,35 @@
+@import "./variable.scss";
+@mixin button($width, $padding, $height, $border-color, $bg-color, $color) {
+  min-width: $width;
+  max-height: $height;
+  padding: $padding;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: $color;
+  border: 1px solid $border-color;
+  margin-bottom: 8px;
+  transition: all ease-in 0.1s;
+  cursor: pointer;
+}
+
+@mixin social-profile-image-grid($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin tag($height, $background, $color, $padding) {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: auto;
+  height: $height;
+  padding: $padding;
+  background: $background;
+  color: $color;
+  border-radius: 14px;
+  margin-bottom: 8px;
+  margin-right: 4px;
+}
